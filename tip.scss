@@ -1,0 +1,99 @@
+.cal-body{
+    background: rgb(8, 8, 8);
+    color: white;
+    width: 45rem;
+    height: 70rem;
+    border: 0px  solid ;
+    border-radius:1.5em ;
+    margin-left: 20rem;
+    margin-top: 10rem;
+
+    h1{
+        text-align: center;
+        padding-top: 5rem;
+        font-size: 4rem;
+
+    }
+
+    .input-sec{
+        text-align: left;
+        padding-left: 3rem;
+        padding-top: 2rem;
+        color: rgb(3, 139, 14);
+        font-size: 3rem;
+        input{
+            width: 30rem;
+            height: 4rem;
+            font-size: 3rem;
+            border: 6px solid rgb(3, 139, 14);
+            margin-top: 1.5 rem;
+            border-radius: 1.5rem;
+            -webkit-border-radius: 1.5rem;
+            -moz-border-radius: 1.5rem;
+            -ms-border-radius: 1.5rem;
+            -o-border-radius: 1.5rem;
+            margin-bottom: 4rem;
+
+}
+    }
+
+    .display-sec{
+
+        
+        padding-left: 4rem;
+
+        .people-cal{
+            font-size: 3rem;
+            color: rgb(3, 139, 14);
+            margin-bottom: 5rem;
+            margin-top: 5rem;
+            .computation{
+            margin-top: 5rem;
+                
+                #add{
+                border: 1px solid white ;
+                border-radius: 2rem;
+                padding: 0.7rem;
+                background-color: rgb(30, 206, 7);
+                padding-left: 1.2rem;
+                padding-right: 1.2rem;
+                font-size: 2rem;
+                color: black;
+                -webkit-border-radius: 2rem;
+                -moz-border-radius: 2rem;
+                -ms-border-radius: 2rem;
+                -o-border-radius: 2rem;
+}
+                #sub{
+                border: 1px solid white ;
+                border-radius: 2rem;
+                padding: 0.7rem;
+                color: black;
+                background-color:rgb(30, 206, 7) ;
+                padding-left: 1.3rem;
+                padding-right: 1.3rem;
+                font-size: 2rem;
+                -webkit-border-radius: 2rem;
+                -moz-border-radius: 2rem;
+                -ms-border-radius: 2rem;
+                -o-border-radius: 2rem;
+                }
+
+ }
+        }
+
+        .total-dir{
+            font-size: 3rem;
+            color: rgb(3, 139, 14);
+            margin-bottom: 5rem;
+            margin-top: 5rem;
+           #total{
+            margin-top: 3rem;
+            color: rgb(255, 0, 21);
+           }
+
+
+        }
+
+    }
+}
