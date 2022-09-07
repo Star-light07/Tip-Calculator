@@ -3,9 +3,12 @@ let tipDisplay = document.getElementById('tip-display');
 let display = document.getElementById('total')
 let addPeople = document.getElementById('add')
 let subPeople = document.getElementById('sub')
-let peopleNum = document.getElementById('numberOfPeople')
 
-peopleNum = Number(addPeople.value)
+let peopleNum = document.getElementById('people-num')
+
+let peopleNumber = Number(peopleNum.innerText)
+
+
 
 const totalPrice = () => {
 
@@ -17,41 +20,35 @@ const totalPrice = () => {
     tipAmount = tipPercentage * bill
     total = tipAmount + bill
 
-    display.innerText = `$${total}`
+    let totalBill = total/peopleNumber
+
+    display.innerText = `$${totalBill}`
 
 
 }
-
-
 
 const increasePeople = () => {
 
 
-    addPeople += 1
+    peopleNumber += 1
 
-   // let addPeople = Number(addPeople)
+    peopleNum.innerText = peopleNumber
 
-    peopleNum.innerText = Number(addPeople)
-   
-
-  
-
-  return addPeople
-
-  totalPrice()
-
+   totalPrice()
 
 
 }
-increasePeople()
-increasePeople()
+
+
 
 const decreasePeople = () => {
 
-    subPeople.value += 1
+    if (peopleNumber >= 1) {
+        peopleNumber -= 1
 
-    peopleNum.innerText = Number(subPeople.value)
-    totalPrice()
+        peopleNum.innerText = peopleNumber
 
+        totalPrice()
+    }
 
 }
